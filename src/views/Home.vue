@@ -2,7 +2,7 @@
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
-        <ion-title>Inbox</ion-title>
+        <ion-title>C43 Buzz</ion-title>
       </ion-toolbar>
     </ion-header>
     

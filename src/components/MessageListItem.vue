@@ -3,16 +3,20 @@
     <div slot="start" :class="!message.read ? 'dot dot-unread' : 'dot'"></div>
     <ion-label class="ion-text-wrap">
       <h2>
-        {{ message.fromName }}
+        {{ message.calendar }}
         <span class="date">
           <ion-note>{{ message.date }}</ion-note>
           <ion-icon :icon="chevronForward" size="small" v-if="isIos()"></ion-icon>
         </span>
       </h2>
-      <h3>{{ message.subject }}</h3>
-      <p>
+
+      <h1>{{ message.title }}</h1>
+
+      <!-- <h3>{{ message.description }}</h3> -->
+      <p>{{ message.description }}</p>
+      <!-- <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+      </p> -->
     </ion-label>
   </ion-item>
 </template>
@@ -68,6 +72,10 @@ export default defineComponent({
   width: 95%;
 }
 
+.list-item .date > ion-note.md {
+  color: #a47e3d;
+}
+
 .list-item .date {
   float: right;
   align-items: center;
@@ -97,7 +105,12 @@ export default defineComponent({
   margin: 16px 10px 16px 16px;
 }
 
-.list-item .dot-unread {
+/* .list-item .dot-unread {
   background: var(--ion-color-primary);
+} */
+</style>
+<style>
+.list-item .dot-unread, .list-md {
+  background: #23a455;
 }
 </style>

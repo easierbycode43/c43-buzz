@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "C43 Buzz",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}
