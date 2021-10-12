@@ -1,0 +1,7 @@
+{
+  "name": "C43 Buzz",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
